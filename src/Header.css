@@ -4,8 +4,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #111;
+    background-color: #19192A;
+    position: fixed;
+    z-index: 100;
+    /* margin-left: 50px; */
+    width: 95%;
+    border-radius: 20px 65px;
 }
+
 
 .logo {
     font-size: 24px;
@@ -24,10 +30,20 @@ nav ul li a {
     font-size: 18px;
 }
 
+nav ul li a:hover{
+    color: #00ffc8;
+}
+
 .github-btn {
-    padding: 10px 20px;
-    border: 2px solid #0f0;
-    color: #0f0;
+    padding: 10px 25px;
+    border: 2px solid #00ffc8;
+    color: #00ffc8;
     text-decoration: none;
     border-radius: 10px;
+    /* margin-left: 30px; */
+}
+
+.github-btn:hover{
+    background-color: #00ffc8;
+    color: black;
 }

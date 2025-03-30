@@ -1,14 +1,37 @@
 import "./Home.css";
 import { typingEffect } from "./Home.js";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import imagemain from "./imagemain.jpg";
 
 function Home() {
+    const openpdf = () => {
+        window.open("https:/instagram.com", "_blank");
+      };
+
+    const [strips, setStrips] = useState([]);
+
     useEffect(() => {
-        typingEffect(); 
+        typingEffect();
+
+        const numStrips = 15; // More strips for a bigger animation
+        const colors = ["#ff4757", "#1e90ff", "#2ed573", "#ff7f50", "#3742fa", "#eccc68"];
+
+        const newStrips = Array.from({ length: numStrips }).map(() => ({
+            id: Math.random(),
+            width: Math.floor(Math.random() * 120) + 30 + "px", // Different strip sizes
+            height: "2px",
+            top: Math.random() * 160 - 30 + "%", // Allow movement beyond container
+            left: Math.random() * 160 - 30 + "%",
+            color1: colors[Math.floor(Math.random() * colors.length)],
+            color2: colors[Math.floor(Math.random() * colors.length)],
+            duration: Math.random() * 6 + 3 + "s", // Slower movement for smoothness
+        }));
+
+        setStrips(newStrips);
     }, []);
 
     return (
-        <section className="hero">
+        <section className="hero" id="about">
             <div className="hero-text">
                 <h1>Hi, I am <br /><span>Agrim Saxena</span></h1>
                 <h2>I am a <span className="typing">Programmer</span></h2>
@@ -18,10 +41,28 @@ function Home() {
                     With a positive attitude and a growth mindset, I am ready to make a meaningful 
                     contribution and achieve great things.
                 </p>
-                <a href="#resume" className="resume-btn">Check Resume</a>
+                <button onClick={openpdf} className="resume-btn">Check Resume</button>
             </div>
+            
             <div className="hero-image">
-                <img src="your-image-path.jpg" alt="Agrim Saxena" />
+                <div className="animated-strips">
+                    {strips.map((strip) => (
+                        <div
+                            key={strip.id}
+                            className="strip"
+                            style={{
+                                width: strip.width,
+                                height: strip.height,
+                                top: strip.top,
+                                left: strip.left,
+                                background: `linear-gradient(to right, ${strip.color1}, ${strip.color2})`,
+                                animationDuration: strip.duration,
+                            }}
+                        ></div>
+                    ))}
+                </div>
+
+                <img src="/imagemain.jpg" alt="Agrim Saxena" />
             </div>
         </section>
     );

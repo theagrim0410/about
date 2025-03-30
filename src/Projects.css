@@ -1,0 +1,66 @@
+.projects-section {
+    padding: 62px 20px;
+    text-align: center;
+    /* Ensures all text inside is centered */
+}
+
+.projects-section h1 {
+    text-align: center;
+    /* Centers the heading */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+.btn:hover{
+    background-color: #111;
+    color: white;
+}
+.filter-buttons {
+    margin: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #00ff99;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #111;
+    border-radius: 10px;
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0px 0px 10px #00ff99;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.tag {
+    background-color: #00ff99;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}

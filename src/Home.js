@@ -1,31 +1,32 @@
 export function typingEffect() {
-    const words = ["Programmer", "Web Developer", "Software Engineer","ML Engineer"];
+    const words = ["Programmer", "MERN Stack Developer", "Software Engineer", "ML Engineer"];
     let index = 0;
     let letterIndex = 0;
-    let currentWord = words[index];
+    let isDeleting = false;
     const typingElement = document.querySelector(".typing");
 
-    function type() {
-        if (!typingElement) return;
-        if (letterIndex < currentWord.length) {
-            typingElement.innerHTML += currentWord[letterIndex];
-            letterIndex++;
-            setTimeout(type, 100);
-        } else {
-            setTimeout(erase, 1500);
-        }
-    }
+    if (!typingElement) return;
 
-    function erase() {
-        if (!typingElement) return;
-        if (letterIndex > 0) {
-            typingElement.innerHTML = currentWord.substring(0, letterIndex - 1);
-            letterIndex--;
-            setTimeout(erase, 100);
-        } else {
+    function type() {
+        const currentWord = words[index];
+        const displayText = isDeleting
+            ? currentWord.substring(0, letterIndex - 1)
+            : currentWord.substring(0, letterIndex + 1);
+        
+        typingElement.textContent = displayText;
+
+        if (!isDeleting && letterIndex === currentWord.length) {
+            setTimeout(() => {
+                isDeleting = true;
+                setTimeout(type, 100);
+            }, 1500);
+        } else if (isDeleting && letterIndex === 0) {
+            isDeleting = false;
             index = (index + 1) % words.length;
-            currentWord = words[index];
             setTimeout(type, 500);
+        } else {
+            letterIndex += isDeleting ? -1 : 1;
+            setTimeout(type, isDeleting ? 50 : 100);
         }
     }
 
