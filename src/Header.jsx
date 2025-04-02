@@ -1,9 +1,10 @@
 import "./Header.css"
 
+
 function Header(){
     return(
-    <header className="ab">
-        <div class="logo">&#9679; Agrim Saxena</div>
+    <header className ="ab">
+        <div className ="logo">&#9679; Agrim Saxena</div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>

@@ -1,16 +1,19 @@
 .projects-section {
-    padding: 62px 20px;
+    padding: 95px 20px;
     text-align: center;
     /* Ensures all text inside is centered */
 }
 
 .projects-section h1 {
-    text-align: center;
+    text-align: center; 
     /* Centers the heading */
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
+.code{
+    width: 100%;
+}
 
 .btn:hover{
     background-color: #111;
@@ -56,6 +59,8 @@
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 10px;
+    color: #111;
+
 }
 
 .tag {

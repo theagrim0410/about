@@ -62,7 +62,7 @@ function Home() {
                     ))}
                 </div>
 
-                <img src="/imagemain.jpg" alt="Agrim Saxena" />
+                <img src={imagemain} alt="Agrim Saxena" />
             </div>
         </section>
     );

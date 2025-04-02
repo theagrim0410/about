@@ -4,21 +4,21 @@ import "./Education.css";
 const Educations = [
   {
     title: "GALGOTIAS COLLEGE OF ENGINEERING AND TECHNOLOGY",
-    company: "BACHOLOR OF TECHNOLOGY COMPUTER SCIENCE AND ENGINEERING (2024-)",
-    duration: "GRADE: ",
+    company: "BACHOLOR OF TECHNOLOGY COMPUTER SCIENCE AND ENGINEERING (2023-2027)",
+    duration: "GRADE : ",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO1nrbGkNgJ5MYFpUb998OIG-ddFkTjN-CPg&s"
      
   },
   {
-    title: "ST. MARY'S CONVENT SR. SEC. SCHOOL FARIDPUR,BAREILLY",
-    company: "HIGD SCHOOL",
-    duration: "GRADE:",
+    title: "ST. MARY'S CONVENT SR. SEC. SCHOOL FARIDPUR,BAREILLY (2021)",
+    company: "HIGH SCHOOL",
+    duration: "GRADE : 89%",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHgOHVxZe5Ja69YczJBRMxf7vX9w3ovSM6yw&s" 
   },
   {
-    title: "ST. MARY'S CONVENT SR. SEC. SCHOOL FARIDPUR,BAREILLY",
+    title: "ST. MARY'S CONVENT SR. SEC. SCHOOL FARIDPUR,BAREILLY (2023)",
     company: "INTERMEDIATE",
-    duration: "GRADE:",
+    duration: "GRADE : 91%",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHgOHVxZe5Ja69YczJBRMxf7vX9w3ovSM6yw&s"   
   }
 
@@ -33,7 +33,7 @@ function Education() {
       <p className="Education-subtitle">My education has been a journey of self-discovery and growth. My educational details are as follows.</p>
       <div className="timeline">
         {Educations.map((exp, index) => (
-          <div key={index} className="Education-card">
+          <div key={index} className="Education-card" style={{ cursor: "default" }}>
             <div className="timeline-dot"></div>
              
             <img src={exp.image} alt={exp.company} className="Education-image"/>

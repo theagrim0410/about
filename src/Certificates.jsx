@@ -5,18 +5,10 @@ const Certificatess = [
   {
     title: "SQl Basics",
     company: "Hacker Rank",
-    duration: "May 2021 - Present",
-    image: "https://instagram.com/",
-    website:"https://www.instagram.com"
-     // Replace with actual image URL
+    duration: "March 2025",
+    image: "https://logowik.com/content/uploads/images/azure-sql-database6354.jpg",
+    website:"https://www.hackerrank.com/certificates/iframe/5ebb5daaea1d"
   },
-  {
-    title: "Professional Freelancer",
-    company: "Fiverr",
-    duration: "Feb 2020 - Present",
-    image: "https://via.placeholder.com/50" ,
-    website:"https://www.google.com"// Replace with actual image URL
-  }
 ];
 
 function Certificates() {

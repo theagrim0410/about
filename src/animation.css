@@ -1,0 +1,13 @@
+/* FadeInSection.css */
+.fade-in-section {
+    opacity: 0.2;
+    transform: translateY(50px); /* Initially slide below */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+  }
+  
+  /* This class is added when the element comes into view */
+  .fade-in-section.fade-in {
+    opacity: 1;
+    transform: translateY(0); /* Element slides to its original position */
+  }
+  
