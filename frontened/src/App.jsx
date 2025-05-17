@@ -1,4 +1,4 @@
-import Header from "./header.jsx";
+import Header from "./Header.jsx";
 import Home from "./Home.jsx";
 import Skills from "./Skills.jsx";
 import Certificates from "./Certificates.jsx";

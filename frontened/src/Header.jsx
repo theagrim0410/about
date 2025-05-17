@@ -23,7 +23,7 @@ function Header(){
                 <li><a href="#education">Education</a></li>
             </ul>
         </nav>
-        <a href="https://github.com/theagrim0410" class="github-btn">Github Profile</a>
+        <a href="https://github.com/theagrim0410" className="github-btn">Github Profile</a>
     </header>
     );
 }
