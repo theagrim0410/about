@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Table</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap'); 
+    body {
+      background: #111;
+      font-family: 'JetBrains Mono', monospace;
+      margin: 0;
+      padding: 20px;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffc8;
+      margin-bottom: 30px;
+      animation: glow 2s infinite alternate;
+    }
+
+    table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 15px #3282b8;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 15px;
+      border-bottom: 1px solid #3282b8;
+      text-align: center;
+    }
+    th {
+      background-color: #3282b8;
+      color: black;
+    }
+    tr:hover {
+      background-color: #00ffc8;
+      color: black;
+      cursor: pointer;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #3282b8; }
+      to { text-shadow: 0 0 20px #3282b8; }
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #3282b8;
+        color: #3282b8;
+        text-decoration: none;
+        border-radius: 10px;
+        background: transparent;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-top: 54px;
+        margin-left: 18cm;
+
+      }
+
+      .btn:hover {
+        background-color: #00ffc8;
+        color: black;
+        border-color: #00ffc8;
+      }
+
+  </style>
+</head>
+<body>
+  <h1>Contact Information</h1>
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>Email</th>
+        <th>subject</th>
+        <th>message</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+    </tbody>
+  </table>
+
+  <button class="btn">HOME</button>
+
+  <script>
+    fetch('/data')
+      .then(response => response.json())
+      .then(sqlData => {
+        const tbody = document.querySelector("#dataTable tbody");
+        sqlData.forEach(user => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${user.id}</td>
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+            <td>${user.subject}</td>
+            <td>${user.message}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+        const tbody = document.querySelector("#dataTable tbody");
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td colspan="4" style="color: red;">❌ Failed to load data</td>`;
+        tbody.appendChild(tr);
+      });
+
+      document.querySelector('.btn').addEventListener('click', () => {
+        window.location.href = '/';
+      });
+  </script>
+</body>
+</html>
