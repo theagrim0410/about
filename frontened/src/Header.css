@@ -7,7 +7,6 @@ header {
     background-color: #19192A;
     position: fixed;
     z-index: 100;
-    /* margin-left: 50px; */
     width: 95%;
     border-radius: 20px 65px;
 }
@@ -40,7 +39,6 @@ nav ul li a:hover{
     color:  #3282B8;
     text-decoration: none;
     border-radius: 10px;
-    /* margin-left: 30px; */
 }
 
 .github-btn:hover{
@@ -49,11 +47,6 @@ nav ul li a:hover{
 }
 
 
-
-/* Hide Toggle Button on Larger Screens */
-.menu-toggle {
-    display: none;
-}
 
 @media (max-width: 768px) {
     .menu-toggle {
@@ -123,3 +116,78 @@ nav ul li a:hover{
     }
 }
 
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        z-index: 101;
+    }
+
+    /* Container wrapping nav (assumed .ab) */
+    .ab {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+        width: 100%;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #19192A;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%);
+        z-index: 100;
+    }
+
+    .ab.show {
+        transform: translateY(0);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+        display: none;
+        width: 100%;
+    }
+
+    .ab.show nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        display: block;
+        padding: 8px;
+    }
+
+    .github-btn {
+        padding: 7px 18px;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+    }
+
+    .ab.show .menu-toggle {
+        color: #00ffc8;
+    }
+}

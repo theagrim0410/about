@@ -94,3 +94,33 @@
     margin-top: 10px;
     font-size: 0.8rem;
   }
+
+
+  @media (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .form-title {
+    font-size: 1.3rem;
+  }
+
+  .form-input, .form-textarea {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .form-button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+}

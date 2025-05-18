@@ -66,3 +66,38 @@
     background-color: #00ffc8;
     color: black;
 }
+
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 60px 10px 100px;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skills-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    gap: 15px;
+  }
+
+  .skills-card {
+    padding: 15px;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .skill-item {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}

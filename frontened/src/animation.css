@@ -11,3 +11,14 @@
     transform: translateY(0); /* Element slides to its original position */
   }
   
+  @media (max-width: 768px) {
+  .fade-in-section {
+    transform: translateY(30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .fade-in-section {
+    transform: translateY(20px);
+  }
+}

@@ -107,8 +107,6 @@
     }
 }
 
-
-
 @media (max-width: 480px) {
     .hero {
         flex-direction: column;
@@ -147,3 +145,6 @@
         clip-path: polygon(0 25%, 100% 30%, 110% 50%, 40% 60%);
     }
 }
+
+
+
