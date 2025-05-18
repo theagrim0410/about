@@ -113,5 +113,6 @@
 
   .project-card {
     padding: 10px;
+    box-shadow: 0 0 5px #3282B8;
   }
 }
