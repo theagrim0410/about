@@ -9,6 +9,22 @@ const Certificatess = [
     image: "https://logowik.com/content/uploads/images/azure-sql-database6354.jpg",
     website:"https://www.hackerrank.com/certificates/iframe/5ebb5daaea1d"
   },
+
+  {
+    title: "Java Spring and React",
+    company: "Galgotias College Of Engineering and Technology",
+    duration: "2025",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8i4zPog-0j0JR_yZglxPhTPZXxN2iMTQ3Dw&s",
+    website:"https://drive.google.com/file/d/1FTI7HDcLTlw8JuyHuANsULVTJaQDSJDN/view?usp=drive_link"
+  },
+
+  {
+    title: "Advanced Python Program",
+    company: "Galgotias College Of Engineering and Technology",
+    duration: "2024",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZMz1hjBcRWGS-Jg8kcHK2eJI_p4aRp_NZw&s",
+    website:"https://drive.google.com/file/d/1FRnmDlAkAhZi76Yf_lZ-ZCZ8S_w9fZXi/view?usp=drive_link"
+  },
 ];
 
 function Certificates() {
