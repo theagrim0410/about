@@ -46,11 +46,13 @@ nav ul li a:hover{
     color: black;
 }
 
+.menu-toggle {
+    display: none;
+}
 
-
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .menu-toggle {
-        display: block;
+        display:flex;
         position: absolute;
         top: 15px;
         right: 20px;
@@ -116,11 +118,9 @@ nav ul li a:hover{
     }
 }
 
-.menu-toggle {
-    display: none;
-}
 
-@media (max-width: 768px) {
+
+@media (max-width: 1000px) {
     .menu-toggle {
         display: block;
         position: absolute;
