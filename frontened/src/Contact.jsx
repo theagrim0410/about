@@ -35,7 +35,7 @@ const Contact = () => {
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Server error. Please try again later.");
+      alert("Please try again later.");
       setFormData({ name: "", email: "", subject: "", message: "" });
     }
   };

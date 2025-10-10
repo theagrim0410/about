@@ -56,7 +56,18 @@ const projects = [
     image: "https://iq.torilo.ng/wp-content/uploads/2022/04/stdasms.jpg",
     tags: ["Python", "SQL" , "Flask"],
     link: "https://github.com/theagrim0410/student_attendence",
+  },
+
+    {
+    title: "Employee Management System Application frontend",
+    category: ["application","website"],
+    date: "Oct 2025",
+    description: "It is Frontned view of  Employee Management System with React Native Application",
+    image: "https://www.zimyo.com/wp-content/uploads/2024/01/Employee-Management-System-scaled.jpg",
+    tags: ["React native", "JavaScript" , "CSS"],
+    link: "https://github.com/theagrim0410/employeemanagement",
   }
+  
 ];
 
 function Projects() {
@@ -79,6 +90,7 @@ function Projects() {
         <button className="btn" onClick={() => handleFilter("all")}>All</button>
         <button className="btn" onClick={() => handleFilter("AI")}>Artificial Intelligence</button>
         <button className="btn" onClick={() => handleFilter("website")}>Website</button>
+        <button className="btn" onClick={() => handleFilter("application")}>Application</button>
         <button className="btn" onClick={() => handleFilter("Database")}>Database</button>
         <button className="btn" onClick={() => handleFilter("other")}>Other</button>
       </div>

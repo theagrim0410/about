@@ -11,7 +11,7 @@ function Header(){
 
        <header className={`ab ${isOpen ? "show" : ""}`}>
             <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
-                {isOpen ? "✖" : "☰"} {/* Toggle Icon */}
+                {isOpen ? "✖" : "☰"} 
             </button>
         <div className ="logo">&#9679; Agrim Saxena</div>
         <nav>

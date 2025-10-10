@@ -3,11 +3,11 @@ import "./Skills.css";
 const skills = [
   {
     category: "Frontend",
-    skills: ["React Js", "HTML", "CSS", "JavaScript"],
+    skills: ["React Js", "React Native" , "HTML", "CSS", "JavaScript"],
   },
   {
     category: "Backend",
-    skills: ["Node Js", "Python Flask", "MySQL", "MongoDB"],
+    skills: ["Node Js", "Python Flask", "MySQL", "PostgreSQL" , "MongoDB"],
   },
   {
     category: "Languages",
