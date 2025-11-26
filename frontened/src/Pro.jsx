@@ -49,16 +49,6 @@ const projects = [
   },
 
   {
-    title: "Student Attendance Manager",
-    category: ["Database","website"],
-    date: "Feb 2025 - March 2025",
-    description: "It manages Student attendance and details with Scanning Qr which is in ID Cards",
-    image: "https://iq.torilo.ng/wp-content/uploads/2022/04/stdasms.jpg",
-    tags: ["Python", "SQL" , "Flask"],
-    link: "https://github.com/theagrim0410/student_attendence",
-  },
-
-    {
     title: "Employee Management System Application frontend",
     category: ["application","website"],
     date: "Oct 2025",
@@ -66,7 +56,18 @@ const projects = [
     image: "https://www.zimyo.com/wp-content/uploads/2024/01/Employee-Management-System-scaled.jpg",
     tags: ["React native", "JavaScript" , "CSS"],
     link: "https://github.com/theagrim0410/employeemanagement",
+  },
+    
+  {
+    title: "Suduku Solver",
+    category: ["other"],
+    date: "Nov 2025",
+    description: "Designed a Sudoku Solver using Backtracking Algorithm in Python",
+    image: "	https://machinelearningprojects.net/wp-content/uploads/2021/08/2-1.png",
+    tags: ["Python" , "Algorithm"],
+    link: "https://github.com/theagrim0410/suduko_Solver",
   }
+  
   
 ];
 
