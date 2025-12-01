@@ -6,7 +6,7 @@ import imagemain from "/imagemain.jpg";
 
 function Home() {
     const openpdf = () => {
-        window.open("https://drive.google.com/file/d/1vXb0XpRQdtlz-oGYarDYJNGNQvbDs6xP/view?usp=drive_link", "_blank");
+        window.open("https://drive.google.com/file/d/1uaFMyBw8SYUQtzs6a_aUe6mIA39NKqWJ/view?usp=drive_link", "_blank");
       };
 
     const [strips, setStrips] = useState([]);
