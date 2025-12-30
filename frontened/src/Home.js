@@ -1,5 +1,5 @@
 export function typingEffect() {
-    const words = ["Python Programmer", "MERN Stack Developer", "Software Engineer"];
+    const words = ["Python Programmer", "Frontend Developer", "Problem Solver", "Tech Enthusiast"];
     let index = 0;
     let letterIndex = 0;
     let isDeleting = false;
