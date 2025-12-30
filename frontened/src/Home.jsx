@@ -35,7 +35,7 @@ function Home() {
         <section className="hero" id="about">
             <div className="hero-text">
                 <h1>Hi, I am <br /><span>Agrim Saxena</span></h1>
-                <h2>I am a <span className="typing">Programmer</span></h2>
+                <h2>I am <span className="typing">Programmer</span></h2>
                 <p>
                     I am a motivated and versatile individual, always ready to take on new challenges. 
                     With a passion for learning, I am dedicated to delivering high-quality results. 
