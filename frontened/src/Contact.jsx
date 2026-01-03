@@ -18,7 +18,7 @@ const Contact = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch("https://message-agrim-saxena.onrender.com", {
+      const response = await fetch("https://about-frontened.onrender.com/message", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

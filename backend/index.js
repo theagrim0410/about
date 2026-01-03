@@ -9,7 +9,21 @@ app.use(cors());
 app.use(express.json());
 
 
+
+app.get("/", (req, res) => {
+  res.status(200).send("Backend is running!");
+});
+
 app.post("/", async (req, res) => {
+  console.log("POST / endpoint hit");
+  res.status(200).json({ success: true, message: "Server is up and running" });
+});
+
+app.get("/message", (req, res) => {
+  res.status(200).send("Message endpoint is working!");
+});
+
+app.post("/message", async (req, res) => {
   const { name, email, subject, message} = req.body;
 
   if (!name || !email || !message) {
