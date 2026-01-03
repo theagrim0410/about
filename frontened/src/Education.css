@@ -94,7 +94,14 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
+  .Education-section {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 95px 20px;
+    padding-top: 145px;
+}
   .Education-title {
     font-size: 2rem;
   }
@@ -103,35 +110,29 @@
     font-size: 1rem;
   }
 
-  .Education-card {
-    padding: 10px;
-  }
-
-  .duration {
-    font-size: 0.9rem;
-  }
-}
-
-
-@media (max-width: 768px) {
   .timeline::before {
     left: 50%;
     transform: translateX(-50%);
   }
 
+  .Education-card {
+    width: 90%;
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .timeline-dot {
     left: 50%;
-    top: -10px; /* fixes the big dot midline issue */
-    transform: translate(-50%, 0);
+    top: -8px;
+    transform: translateX(-50%);
     width: 10px;
     height: 10px;
   }
 
-  .Education-card {
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .Education-card:hover .timeline-dot {
+    transform: translateX(-50%) translateY(5px);
   }
 
   .Education-image {
@@ -140,5 +141,9 @@
 
   .Education-details {
     text-align: center;
+  }
+
+  .duration {
+    font-size: 0.9rem;
   }
 }

@@ -68,9 +68,10 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
   .skills-section {
     padding: 60px 10px 100px;
+    padding-top: 145px;
   }
 
   .skills-title {

@@ -1,4 +1,4 @@
-
+/* 
 header {
     display: flex;
     justify-content: space-between;
@@ -133,8 +133,6 @@ nav ul li a:hover{
         cursor: pointer;
         z-index: 101;
     }
-
-    /* Container wrapping nav (assumed .ab) */
     .ab {
         flex-direction: column;
         align-items: center;
@@ -190,4 +188,145 @@ nav ul li a:hover{
     .ab.show .menu-toggle {
         color: #00ffc8;
     }
+} */
+
+
+
+
+.ab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 45px;
+    background-color: #19192A;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    z-index: 100;
+    border-radius: 18px 60px;
+    transition: all 0.3s ease;
 }
+
+.logo {
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ffc8;
+}
+
+.github-btn {
+    padding: 9px 22px;
+    border: 2px solid #3282B8;
+    color: #3282B8;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #00ffc8;
+    color: black;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 18px;
+        font-size: 24px;
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        z-index: 200;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+        transform: scale(1.1);
+    }
+
+    .ab {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        width: 92%;
+        top: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #19192A;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        text-align: center;
+        margin-top: 12px;
+        gap: 6px;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-8px);
+        transition: all 0.35s ease;
+    }
+
+    .nav-open ul {
+        max-height: 320px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    nav ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 90%;             
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(0, 255, 200, 0.12);
+    }
+
+    .github-btn {
+        margin-top: 12px;
+        font-size: 14px;
+        padding: 8px 18px;
+        border-radius: 10px;
+    }
+}
+
+
+

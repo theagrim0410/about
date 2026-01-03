@@ -49,7 +49,7 @@ const Contact = () => {
       </p>
 
       <div className="form-container">
-        <h3 className="form-title">Email Me 🚀</h3>
+        <h3 className="form-title">Email Me ..</h3>
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="email"
@@ -140,7 +140,7 @@ const Contact = () => {
             Education
           </a>
         </div>
-        <p className="footer-text">© 2025 Agrim Saxena All rights reserved</p>
+        <p className="footer-text">© 2026 Agrim Saxena </p>
       </footer>
     </div>
   );

@@ -96,10 +96,15 @@
   }
 
 
-  @media (max-width: 480px) {
+  @media (max-width: 1000px) {
+    .contact-container {
+      padding-top: 135px;
+      }
+
   .form-container {
     width: 90%;
     padding: 15px;
+    
   }
 
   .contact-title {
