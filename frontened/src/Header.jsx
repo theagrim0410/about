@@ -52,6 +52,7 @@ function Header() {
                     <li><a href="#certificate" onClick={() => setIsOpen(false)}>Certificate</a></li>
                     <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
                     <li><a href="#education" onClick={() => setIsOpen(false)}>Education</a></li>
+                   
                 </ul>
             </nav>
 

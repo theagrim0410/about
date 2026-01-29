@@ -2,11 +2,11 @@ import "./Home.css";
 import { typingEffect } from "./Home.js";
 import { useEffect, useState } from "react";
 import imagemain from "/imagemain.jpg";
-
+import SocialIcons from "./SocialIcons.jsx";
 
 function Home() {
     const openpdf = () => {
-        window.open("https://drive.google.com/file/d/1uaFMyBw8SYUQtzs6a_aUe6mIA39NKqWJ/view?usp=drive_link", "_blank");
+        window.open("https://drive.google.com/file/d/1GpAQTNVT8kxSYNp4TxYeMca-AsQkcXAA/view?usp=sharing", "_blank");
       };
 
     const [strips, setStrips] = useState([]);
@@ -43,6 +43,8 @@ function Home() {
                     contribution and achieve great things.
                 </p>
                 <button onClick={openpdf} className="resume-btn">Check Resume</button>
+                <br />
+                    <SocialIcons />
             </div>
             
             <div className="hero-image">

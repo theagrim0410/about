@@ -1,0 +1,90 @@
+/* Wrapper */
+.social-wrapper {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Icon Base */
+.icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid #3282B8;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+/* Anchor */
+.icon a {
+  width: 100%;
+  height: 100%;
+  color: #3282B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.35s ease;
+}
+
+/* Hover Glow */
+.icon:hover {
+  background: #00ffc8;
+  box-shadow: 0 0 18px rgba(0, 255, 200, 0.45);
+  transform: translateY(-4px);
+}
+
+.icon:hover a {
+  color: #000;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  top: -40px;
+  background: #00ffc8;
+  color: #000;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.icon:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Platform subtle accents */
+.linkedin {
+  border-color: #3282B8;
+}
+
+.twitter {
+  border-color: #3282B8;
+}
+
+.leetcode {
+  border-color: #3282B8;
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+  .social-wrapper {
+    justify-content: center;
+  }
+
+  .icon {
+    width: 46px;
+    height: 46px;
+  }
+}

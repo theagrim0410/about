@@ -42,7 +42,9 @@ const Contact = () => {
   
 
   return (
+    
     <div className="contact-container">
+     
       <h2 className="contact-title">Contact</h2>
       <p className="contact-description">
         Feel free to reach out to me for any questions or opportunities!
@@ -91,7 +93,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-
+    
       <footer className="contact-footer">
         <h3 className="footer-title">AGRIM SAXENA</h3>
         <div className="social-links">
@@ -109,12 +111,6 @@ const Contact = () => {
             className="social-link"
           >
             LinkedIn
-          </a>
-          <a
-            href="https://www.instagram.com/theagrim0410/"
-            className="social-link"
-          >
-            Instagram
           </a>
           <a
             href="https://github.com/theagrim0410"
