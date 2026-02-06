@@ -66,8 +66,27 @@ const projects = [
     image: "	https://machinelearningprojects.net/wp-content/uploads/2021/08/2-1.png",
     tags: ["Python" , "Algorithm"],
     link: "https://github.com/theagrim0410/suduko_Solver",
+  },
+
+   {
+    title: "Dog Cat Identification CNN",
+    category: ["Machine Learning"],
+    date: "Jan 2026",
+    description: "Designed a Dog Cat Identification CNN model using  Python , it takes input as image and identifies whether it is a dog or cat",
+    image: "https://ai.google.dev/static/edge/mediapipe/images/solutions/examples/object_detector.png",
+    tags: ["Python" , "Machine Learning"],
+    link: "https://github.com/theagrim0410/cat_dog_cnn",
+  },
+
+   {
+    title: "Open eye Closed eye CNN",
+    category: ["Machine Learning"],
+    date: "Feb 2026",
+    description: "Designed an Open Eye Closed Eye CNN model which used in vehicle drowsiness detection  using  Python and OpenCV with alarm system",
+    image: "https://go.smarteye.se/hs-fs/hubfs/Sleep%20detection%20DMS.jpg?width=1890&name=Sleep%20detection%20DMS.jpg",
+    tags: ["Python" , "Machine Learning","OpenCV"],
+    link: "https://github.com/theagrim0410/eyesopenorcloses",
   }
-  
   
 ];
 
@@ -93,6 +112,7 @@ function Projects() {
         <button className="btn" onClick={() => handleFilter("website")}>Website</button>
         <button className="btn" onClick={() => handleFilter("application")}>Application</button>
         <button className="btn" onClick={() => handleFilter("Database")}>Database</button>
+        <button className="btn" onClick={() => handleFilter("Machine Learning")}>Machine Learning</button>
         <button className="btn" onClick={() => handleFilter("other")}>Other</button>
       </div>
 
