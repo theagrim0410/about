@@ -3,8 +3,16 @@ import "./Certificates.css";
 
 const Certificatess = [
   {
+    title: "Advanced Python Program",
+    company: "Galgotias College Of Engineering and Technology",
+    duration: "2024",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZMz1hjBcRWGS-Jg8kcHK2eJI_p4aRp_NZw&s",
+    website:"https://drive.google.com/file/d/1FRnmDlAkAhZi76Yf_lZ-ZCZ8S_w9fZXi/view?usp=drive_link"
+  },
+
+  {
     title: "SQl Basics",
-    company: "Hacker Rank",
+    company: "HackerRank",
     duration: "March 2025",
     image: "https://logowik.com/content/uploads/images/azure-sql-database6354.jpg",
     website:"https://www.hackerrank.com/certificates/iframe/5ebb5daaea1d"
@@ -19,12 +27,13 @@ const Certificatess = [
   },
 
   {
-    title: "Advanced Python Program",
-    company: "Galgotias College Of Engineering and Technology",
-    duration: "2024",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZMz1hjBcRWGS-Jg8kcHK2eJI_p4aRp_NZw&s",
-    website:"https://drive.google.com/file/d/1FRnmDlAkAhZi76Yf_lZ-ZCZ8S_w9fZXi/view?usp=drive_link"
+    title: "Python Program",
+    company: "HackerRank",
+    duration: "2026",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-CLUbY0yg_sNuL2fsGS9I447M07-PYTw9Q&s",
+    website:" https://www.hackerrank.com/certificates/iframe/6f84c39cb13e"
   },
+
 ];
 
 function Certificates() {
