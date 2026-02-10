@@ -53,7 +53,7 @@ const SocialIcons = () => {
       {/* LinkedIn */}
       <li className="icon linkedin">
         <a
-          href="http://linkedin.com/in/agrim-saxena-5a24b5256/"
+          href="http://linkedin.com/in/agrim-saxena-5a24b5256/W"
           target="_blank"
           rel="noopener noreferrer"
         >
