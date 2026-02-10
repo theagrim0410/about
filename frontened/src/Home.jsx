@@ -6,7 +6,7 @@ import SocialIcons from "./SocialIcons.jsx";
 
 function Home() {
     const openpdf = () => {
-        window.open("https://drive.google.com/file/d/1GpAQTNVT8kxSYNp4TxYeMca-AsQkcXAA/view?usp=sharing", "_blank");
+        window.open("https://drive.google.com/file/d/1q-vpL-j2BlgVXOYxit-rFu5RRs7VewKm/view?usp=sharing", "_blank");
       };
 
     const [strips, setStrips] = useState([]);
