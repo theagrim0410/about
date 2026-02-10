@@ -3,24 +3,6 @@ import "./Projects.css";
 
 const projects = [
   {
-    title: "SpeechBot",
-    category: ["website", "AI"], 
-    date: "Jan 2025",
-    description: "It can perform ten different tasks along with talking",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKtO1jVqdrKexgz4-RBL1XvSG_sWsEY4Mwjg&s",
-    tags: ["Python", "Flask"],
-    link: "https://github.com/theagrim0410/python-speech-bot-using-flask",
-  },
-  {
-    title: "TextBot",
-    category: ["AI"],
-    date: "Nov 2024 - Dec 2024",
-    description: "It answers your questions",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHHnDC112tSNqcxYks6pCLSsJiVN5u7eWdjA&s",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://github.com/theagrim0410/chatbot-",
-  },
-  {
     title: "GUI Calendar",
     category: ["other"],
     date: "Dec 2022 - Jan 2023",
@@ -29,6 +11,7 @@ const projects = [
     tags: ["Python"],
     link: "https://github.com/theagrim0410/python-calender-and-clock-gui",
   },
+
   {
     title: "GUI Calculator",
     category: ["other"],
@@ -38,6 +21,7 @@ const projects = [
     tags: ["Python"],
     link: "https://github.com/theagrim0410/python-calculator-gui",
   },
+
   {
     title: "Employees Attendance Manager",
     category: ["Database"],
@@ -46,6 +30,26 @@ const projects = [
     image: "https://www.branchingminds.com/hubfs/How%20To%20Track%20and%20Support%20Student%20Attendance%20in%20MTSS_featureimage.png",
     tags: ["Python", "SQL"],
     link: "https://github.com/theagrim0410/Python-",
+  },
+
+  {
+    title: "TextBot",
+    category: ["AI"],
+    date: "Nov 2024 - Dec 2024",
+    description: "It answers your questions",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHHnDC112tSNqcxYks6pCLSsJiVN5u7eWdjA&s",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/theagrim0410/chatbot-",
+  },
+
+  {
+    title: "SpeechBot",
+    category: ["website", "AI"], 
+    date: "Jan 2025",
+    description: "It can perform ten different tasks along with talking",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKtO1jVqdrKexgz4-RBL1XvSG_sWsEY4Mwjg&s",
+    tags: ["Python", "Flask"],
+    link: "https://github.com/theagrim0410/python-speech-bot-using-flask",
   },
 
   {
@@ -67,8 +71,18 @@ const projects = [
     tags: ["Python" , "Algorithm"],
     link: "https://github.com/theagrim0410/suduko_Solver",
   },
+  
+  {
+    title: "News Article Category Classification",
+    category: ["Machine Learning"],
+    date: "Dec 2025",
+    description: "Designed a News Article Category Classification model using  Python  , it takes input as text and classifies the news article into different categories",
+    image: "https://www.labellerr.com/blog/content/images/2024/02/News-Classification-using-NLP.webp",
+    tags: ["Python" , "Machine Learning"],
+    link: "https://github.com/theagrim0410/newscategory",
+  },
 
-   {
+  {
     title: "Dog Cat Identification CNN",
     category: ["Machine Learning"],
     date: "Jan 2026",
@@ -78,7 +92,7 @@ const projects = [
     link: "https://github.com/theagrim0410/cat_dog_cnn",
   },
 
-   {
+  {
     title: "Open eye Closed eye CNN",
     category: ["Machine Learning"],
     date: "Feb 2026",
@@ -86,8 +100,8 @@ const projects = [
     image: "https://go.smarteye.se/hs-fs/hubfs/Sleep%20detection%20DMS.jpg?width=1890&name=Sleep%20detection%20DMS.jpg",
     tags: ["Python" , "Machine Learning","OpenCV"],
     link: "https://github.com/theagrim0410/eyesopenorcloses",
-  }
-  
+  },
+
 ];
 
 function Projects() {
