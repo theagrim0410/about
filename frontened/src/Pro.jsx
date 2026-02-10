@@ -5,7 +5,7 @@ const projects = [
   {
     title: "GUI Calendar",
     category: ["other"],
-    date: "Dec 2022 - Jan 2023",
+    date: "Dec 2022",
     description: "It shows the calendar and real-time wishes",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Pa5v9NZhYlBUQtUJ30xCcRocO5i7PF_npQ&s",
     tags: ["Python"],
@@ -15,7 +15,7 @@ const projects = [
   {
     title: "GUI Calculator",
     category: ["other"],
-    date: "Dec 2022 - Jan 2023",
+    date: "Jan 2023",
     description: "It performs basic calculations",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsm83GSFTF48yYXARGUBMkIXDob2ALHemUg&s",
     tags: ["Python"],
@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Employees Attendance Manager",
     category: ["Database"],
-    date: "Nov 2022 - Dec 2024",
+    date: "Feb 2023",
     description: "It manages employee attendance and details",
     image: "https://www.branchingminds.com/hubfs/How%20To%20Track%20and%20Support%20Student%20Attendance%20in%20MTSS_featureimage.png",
     tags: ["Python", "SQL"],
@@ -35,7 +35,7 @@ const projects = [
   {
     title: "TextBot",
     category: ["AI"],
-    date: "Nov 2024 - Dec 2024",
+    date: "Nov 2024",
     description: "It answers your questions",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHHnDC112tSNqcxYks6pCLSsJiVN5u7eWdjA&s",
     tags: ["HTML", "CSS", "JavaScript"],
